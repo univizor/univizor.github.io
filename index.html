@@ -2,22 +2,36 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<div class="columns">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="c logo">
+    <a href="/" rel="logo">
+      <img src="/assets/img/univizor-logo.gif" width="200"/>
+    </a>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
+
+  <div class="c repositories">
+    <p>Projects</p>
+
+    <ul>{% for repository in site.github.public_repositories %}
+      <li class="repository">
+        <a href="{{ repository.html_url }}">
+          <div class="name">{{ repository.name }}</div>
+          <div class="updated_at">{{ repository.updated_at | date: "%d. %b. %Y" }}</div>
+        </a>
       </li>
     {% endfor %}
-  </ul>
+    </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="c advisors">
+    <p>Advisors / Partners</p>
+    <ul>
+      <li>
+        <a href="https://twitter.com/otobrglez">Oto Brglez</a>
+      </li>
+    </ul>
+  </div>
 </div>
