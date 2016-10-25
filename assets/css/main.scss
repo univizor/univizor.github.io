@@ -2,9 +2,12 @@
 ---
 @charset "utf-8";
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size: 16px;
+$base-font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+$base-font-size: 14px;
+$base-line-height: 22px;
 $content-max-width: 960px;
+
+$blue-color: #005689;
 
 html, body, th, th, p {
   margin: 0;
@@ -14,13 +17,19 @@ html, body, th, th, p {
 }
 
 a {
+  color: $blue-color;
   text-decoration: none;
-}
 
+  &:hover {
+    color: #333;
+  }
+}
 
 html, body {
   font-family: $base-font-family;
   font-size: $base-font-size;
+  line-height: $base-line-height;
+  text-rendering: geometricPrecision;
 }
 
 ul, ul li {
@@ -50,6 +59,10 @@ ul, ul li {
     float: left;
     padding-top: 33px;
 
+    li {
+      margin-bottom: 10px;
+    }
+
     &.logo {
       padding-top: 0;
     }
@@ -57,10 +70,6 @@ ul, ul li {
     &.repositories {
       .updated_at {
         font-size: 70%;
-      }
-
-      li {
-        margin-bottom: 10px;
       }
     }
   }
