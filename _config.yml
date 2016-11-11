@@ -1,8 +1,8 @@
 title: UNIVIZOR Slovenija
 email: otobrglez@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
+  <strong> Koliko diplomskih, magisterskih in doktorskih del v Sloveniji je plagiatov?</strong>
   Z uporabo naprednih algoritmov, sistemov in strojnega učenja iščemo odgovore na največja in najtežja vprašanja.
-  Vprašanje je preprosto. <strong> Koliko diplomskih, magisterskih in doktorskih del v Sloveniji je plagiatov?</strong>
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://univizor.si" # the base hostname & protocol for your site
