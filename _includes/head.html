@@ -15,6 +15,12 @@
   <meta property="og:image"              content="http://univizor.si/assets/img/univizor-logo-150.png" />
   <meta property="fb:app_id"             content="336469756733432"/>
 
+  <meta name="twitter:image" content="http://univizor.si/assets/img/univizor-logo-150.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="UNIVIZOR Slovenija">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 140 | escape }}">
+  <meta name="twitter:site" content="@otobrglez">
+  <meta name="twitter:creator" content="@otobrglez">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
