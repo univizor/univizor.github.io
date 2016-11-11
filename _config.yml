@@ -25,12 +25,11 @@ authors:
     linkedin_url: https://www.linkedin.com/in/otobrglez
     twitter_url: https://twitter.com/otobrglez
     email: otobrglez@gmail.com
+    gravatar_hash: 01cda64f5be17aec3429166eb88182cd
   -
     name: "Jožko Škrablin"
     github_url: https://github.com/jozko
     linkedin_url: https://www.linkedin.com/in/jozko-skrablin-75588757
     twitter_url: https://twitter.com/jskrablin
     email: jozko@zomg.si
-
-gems:
-  - jekyll-gravatar
+    gravatar_hash: e746cc00bdb9098633dae1ff42a9c68b

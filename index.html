@@ -11,7 +11,7 @@ layout: default
     {% for author in site.authors %}
       <div class="author">
         <div class="avatar">
-          <img class="gravatar" src="{{ author.email | to_gravatar }}?s=100" />
+          <img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}?s=200" />
         </div>
         <div class="name">{{ author.name }}</div>
         <div class="links">
