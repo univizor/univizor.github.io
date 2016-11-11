@@ -13,7 +13,24 @@ url: "univizor.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 # theme: minima
-repository: univizor/univizor.github.io
+# repository: univizor/univizor.github.io
 
 sass:
   sass_dir: _sass
+
+authors:
+  -
+    name: "Oto Brglez"
+    github_url: https://github.com/otobrglez
+    linkedin_url: https://www.linkedin.com/in/otobrglez
+    twitter_url: https://twitter.com/otobrglez
+    email: otobrglez@gmail.com
+  -
+    name: "Jožko Škrablin"
+    github_url: https://github.com/jozko
+    linkedin_url: https://www.linkedin.com/in/jozko-skrablin-75588757
+    twitter_url: https://twitter.com/jskrablin
+    email: jozko@zomg.si
+
+gems:
+  - jekyll-gravatar

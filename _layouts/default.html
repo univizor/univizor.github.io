@@ -2,6 +2,7 @@
 <html>
   {% include head.html %}
 <body>
+  <div id="particles-js"></div>
 
   <div class="page-content">
     <div class="wrap">
@@ -9,5 +10,10 @@
     </div>
   </div>
 
+  <script src="{{ "/assets/js/particles.min.js" | relative_url }}"></script>
+  <script type="text/javascript">
+    particlesJS.load('particles-js', '{{ "/assets/js/particlesjs-config.json" | relative_url }}', function() {
+    });
+  </script>
 </body>
 </html>

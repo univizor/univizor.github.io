@@ -2,37 +2,36 @@
 layout: default
 ---
 
+<div class="logo">
+  <img src="/assets/img/univizor-logo_transparent.png" style="width:100%; min-width: 100px; max-width: 200px" />
+</div>
 
-<div class="columns">
-
-  <div class="c logo">
-    <a href="/" rel="logo" style="text-align: center">
-      <img src="/assets/img/univizor-logo.gif" style="width:100%; min-width: 100px; max-width: 200px" />
-    </a>
-  </div>
-
-  <div class="c repositories">
-    <p>Podprojekti</p>
-
-    <ul>{% for repository in site.github.public_repositories %}
-      <li class="repository">
-        <a href="{{ repository.html_url }}">
-          <div class="name">{{ repository.name }}</div>
-        </a>
-      </li>
+<div class="section">
+  <div class="authors">
+    {% for author in site.authors %}
+      <div class="author">
+        <div class="avatar">
+          <img class="gravatar" src="{{ author.email | to_gravatar }}?s=100" />
+        </div>
+        <div class="name">{{ author.name }}</div>
+        <div class="links">
+          <div class="link">
+            <a href="{{ author.twitter_url }}">
+            <img src="/assets/img/twitter.png" />
+            </a>
+          </div>
+          <div class="link">
+            <a href="{{ author.linkedin_url }}">
+            <img src="/assets/img/linkedin.png" />
+            </a>
+          </div>
+          <div class="link">
+            <a href="{{ author.github_url }}">
+            <img src="/assets/img/github_6.png" />
+            </a>
+          </div>
+        </div>
+      </div>
     {% endfor %}
-    </ul>
-  </div>
-
-  <div class="c advisors">
-    <p>Svetovalci / Partnerji</p>
-    <ul>
-      <li>
-        <a href="https://twitter.com/otobrglez">Oto Brglez</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/jskrablin">Jožko Škrablin</a>
-      </li>
-    </ul>
   </div>
 </div>
