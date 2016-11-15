@@ -3,39 +3,57 @@ layout: default
 ---
 
 <div class="logo">
-  <img src="/assets/img/univizor-logo_transparent.png" style="width:100%; min-width: 100px; max-width: 200px" />
+    <img src="/assets/img/univizor-logo_transparent.png" style="width:100%; min-width: 100px; max-width: 200px"/>
 </div>
 
 <div class="mission">
-  <p>{{ site.description }}</p>
+    <p>{{ site.description }}</p>
 </div>
 
+<div class="mailchimp">
+    <div id="mc_embed_signup">
+        <form action="//univizor.us14.list-manage.com/subscribe/post?u=be076de3329ee5ed005c846d4&amp;id=8188bbe255"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Naroči se na novice (e-mail)."
+                       required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_be076de3329ee5ed005c846d4_8188bbe255" tabindex="-1" value=""></div>
+                <div class="clear">
+                    <input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- /.mailchimp -->
+
 <div class="section">
-  <div class="authors">
-    {% for author in site.authors %}
-      <div class="author">
-        <div class="avatar">
-          <img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}?s=200" />
+    <div class="authors">
+        {% for author in site.authors %}
+        <div class="author">
+            <div class="avatar">
+                <img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}?s=200"/>
+            </div>
+            <div class="name">{{ author.name }}</div>
+            <div class="links">
+                <div class="link">
+                    <a href="{{ author.twitter_url }}">
+                        <img src="/assets/img/twitter.png"/>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="{{ author.linkedin_url }}">
+                        <img src="/assets/img/linkedin.png"/>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="{{ author.github_url }}">
+                        <img src="/assets/img/github_6.png"/>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="name">{{ author.name }}</div>
-        <div class="links">
-          <div class="link">
-            <a href="{{ author.twitter_url }}">
-            <img src="/assets/img/twitter.png" />
-            </a>
-          </div>
-          <div class="link">
-            <a href="{{ author.linkedin_url }}">
-            <img src="/assets/img/linkedin.png" />
-            </a>
-          </div>
-          <div class="link">
-            <a href="{{ author.github_url }}">
-            <img src="/assets/img/github_6.png" />
-            </a>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+        {% endfor %}
+    </div>
 </div>
